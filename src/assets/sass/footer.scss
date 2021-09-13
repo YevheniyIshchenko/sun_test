@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  width: 1300px;
+  height: 73px;
+  margin-bottom: 70px;
+  &__logo {
+    &__header {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 29px;
+
+      font-family: "Playfair Display", serif;
+    }
+    &__text {
+      font-size: 13px;
+      line-height: 16px;
+      font-family: "Poiret One";
+      color: #2d2d41;
+    }
+  }
+  &__navigation {
+    margin-left: 449px;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 590px;
+      height: 20px;
+      list-style-type: none;
+      &__item {
+        font-size: 16px;
+        line-height: 20px;
+        font-family: "Playfair Display", serif;
+
+        text-align: center;
+        letter-spacing: -0.333333px;
+        font-feature-settings: "pnum" on, "lnum" on;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    display: none;
+  }
+}

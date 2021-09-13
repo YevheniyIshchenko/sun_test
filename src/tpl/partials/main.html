@@ -1,0 +1,163 @@
+<div class="main">
+  <div class="formalaize-order">
+    <section class="formalaize-order__form">
+      <img class="arrow" src="./assets/img/arrow-left.svg" alt="arrow">
+      <h2 class="formalaize-order__form__header">Оформление заказа</h2>
+      <p class="formalaize-order__form__choice">Выберете тип оплаты:</p>
+      <div class="formalaize-order__form__pay-type">
+        <input
+          class="choice-type"
+          name="pay_type"
+          type="radio"
+          value="Наличный расчёт"
+          id="radioButton"
+        />
+        <label class="choice-type__label" for="radioButton"
+          >Наличный расчёт</label
+        >
+        <input
+          class="choice-type"
+          name="pay_type"
+          type="radio"
+          checked
+          value="Оплата на карту"
+          id="radioButton2"
+        />
+        <label class="choice-type__label" for="radioButton2"
+          >Оплата на карту</label
+        >
+      </div>
+      <div class="formalaize-order__form__delivery">
+        <p class="formalaize-order__form__delivery__choice">
+          Выберете тип доставки:
+        </p>
+        <input
+          class="choice-type"
+          name="delivery"
+          type="radio"
+          value="Самовывоз"
+          id="radioButton3"
+        />
+        <label class="choice-type__label" for="radioButton3">Самовывоз</label>
+        <input
+          class="choice-type"
+          name="delivery"
+          type="radio"
+          checked
+          value="Курьером по Киеву"
+          id="radioButton4"
+        />
+        <label class="choice-type__label" for="radioButton4"
+          >Курьером по Киеву</label
+        >
+        <input
+          class="choice-type"
+          name="delivery"
+          type="radio"
+          checked
+          value="В отделение Новой Почты"
+          id="radioButton5"
+        />
+        <label class="choice-type__label" for="radioButton5"
+          >В отделение <br />
+          Новой Почты
+        </label>
+        <input
+          class="choice-type"
+          name="delivery"
+          type="radio"
+          checked
+          value="Курьером Новой Почты"
+          id="radioButton6"
+        />
+        <label class="choice-type__label" for="radioButton6"
+          >Курьером Новой <br />
+          Почты</label
+        >
+      </div>
+      <form class="formalaize-order__form__address" action="#" id="address">
+        <h2 class="formalaize-order__form__address__header">Укажите адрес:</h2>
+        <input
+          class="formalaize-order__form__address__fild"
+          type="text"
+          placeholder="Город"
+          id="city"
+          required
+        />
+        <span class="error__city">Поле должно быть заполнено</span>
+        <input
+          class="formalaize-order__form__address__fild"
+          type="text"
+          placeholder="Улица"
+          id="street"
+          required
+        />
+        <span class="error__street">Поле должно быть заполнено</span>
+        <input
+          class="formalaize-order__form__address__fild"
+          type="text"
+          placeholder="Номер дома"
+          id="house"
+          required
+        />
+        <span class="error__house">Поле должно быть заполнено</span>
+        <input
+          class="formalaize-order__form__address__fild"
+          type="text"
+          placeholder="Комментарии"
+        />
+      </form>
+    </section>
+  </div>
+  <div class="selected-products">
+    <div class="ordered-list">
+      <div class="ordered-list__item">
+        <div class="ordered-list__item__img">
+          <img src="./assets/img/product1.png" alt="product1" />
+        </div>
+        <div class="ordered-list__item__name">
+          <p>PQAge Evolution Plus - Пилинг | Promoitalia</p>
+          <span>14x3 мл</span>
+        </div>
+        <div class="ordered-list__item__number"><span>1</span></div>
+        <div class="ordered-list__item__price"><span>97.00 UAH</span></div>
+      </div>
+      <div class="ordered-list__item">
+        <div class="ordered-list__item__img">
+          <img src="./assets/img/product2.png" alt="product1" />
+        </div>
+        <div class="ordered-list__item__name">
+          <p>PQAge Evolution Plus - Пилинг | Promoitalia</p>
+          <span>50 г</span>
+        </div>
+        <div class="ordered-list__item__numbe">308</div>
+        <div class="ordered-list__item__price">4613.00 UAH</div>
+      </div>
+      <div class="ordered-list__item">
+        <div class="ordered-list__item__img">
+          <img src="./assets/img/product3.png" alt="product1" />
+        </div>
+        <div class="ordered-list__item__name">
+          <p>Cytocare 532</p>
+          <span>10x5 мл</span>
+        </div>
+        <div class="ordered-list__item__numbe">1</div>
+        <div class="ordered-list__item__price">560.00 UAH</div>
+      </div>
+    </div>
+    <div class="order-sum">
+      <div class="order-sum__text">
+        <p>Cумма заказа:</p>
+      </div>
+      <div class="order-sum__price">4613.00 UAH</div>
+    </div>
+    <div class="delivery-price">
+      <div class="delivery-price__text">
+        <p>Стоимость доставки:</p>
+      </div>
+      <div class="delivery-price__price">49–150 uah</div>
+    </div>
+    <input type="submit" id="submitBtn" class="form-btn" disabled  form="address" value="Оформить заказ"></input>
+  </div>
+</div>
+

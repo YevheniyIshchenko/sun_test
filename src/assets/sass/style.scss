@@ -1,0 +1,25 @@
+@import "./header.scss";
+@import "./main.scss";
+@import "./footer.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  color: #2d2d41;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+  .page {
+    max-width: 375px;
+    padding: 0 12px;
+  }
+}
